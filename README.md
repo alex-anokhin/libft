@@ -1,5 +1,7 @@
 # libft + bonus
 My first project in 42 school Heilbronn
 
-paco was used testing.
-it pass all checks in strict mode too.
+Francinette was used testing.
+It pass all checks in strict mode too.
+
+Feel free to contact.
