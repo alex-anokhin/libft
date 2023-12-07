@@ -3,51 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olanokhi <olanokhi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: olanokhi <olanokhi@42heilbronn.student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 12:12:37 by olanokhi          #+#    #+#             */
-/*   Updated: 2023/10/20 17:28:58 by olanokhi         ###   ########.fr       */
+/*   Updated: 2023/12/07 02:50:52 by olanokhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-unsigned long	ft_strlen(const char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
-char	*ft_strdup(const char *s)
-{
-	char	*ptr;
-	size_t	i;
-	size_t	len;
-
-	ptr = NULL;
-	i = 0;
-	len = 0;
-	while (s[len])
-	{
-		len++;
-	}
-	ptr = malloc((len + 1) * sizeof(char));
-	if (ptr == NULL)
-		return (NULL);
-	while (i < len)
-	{
-		ptr[i] = s[i];
-		i++;
-	}
-	ptr[i] = '\0';
-	return (ptr);
-}*/
 
 unsigned long	get_start(char const *s1, char const *set)
 {

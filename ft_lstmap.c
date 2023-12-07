@@ -3,89 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olanokhi <olanokhi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: olanokhi <olanokhi@42heilbronn.student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 19:55:11 by olanokhi          #+#    #+#             */
-/*   Updated: 2023/10/19 16:55:08 by olanokhi         ###   ########.fr       */
+/*   Updated: 2023/12/07 02:45:32 by olanokhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-void	ft_lstdelone(t_list *lst, void (*del)(void *))
-{
-	if (lst && del)
-	{
-		del(lst->content);
-		free(lst);
-	}
-}
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
-{
-	t_list	*last;
-
-	if (*lst == NULL)
-		*lst = new;
-	else
-	{
-		last = ft_lstlast(*lst);
-		last->next = new;
-	}
-}
-
-t_list	*ft_lstnew(void *content)
-{
-	t_list	*new;
-
-	new = (t_list *)malloc(sizeof(t_list));
-	if (new == NULL)
-		return (NULL);
-	new->content = content;
-	new->next = NULL;
-	return (new);
-}
-
-t_list	*ft_lstlast(t_list *lst)
-{
-	t_list	*last;
-
-	last = NULL;
-	while (lst != NULL)
-	{
-		last = lst;
-		lst = lst->next;
-	}
-	return (last);
-}
-
-unsigned long	ft_strlen(const char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
-
-void	ft_lstclear(t_list **lst, void (*del)(void *))
-{
-	t_list	*tmp;
-
-	while (*lst)
-	{
-		tmp = (*lst)->next;
-		if (del)
-		{
-			del((*lst)->content);
-			free(*lst);
-		}
-		*lst = tmp;
-	}
-	*lst = NULL;
-}
-*/
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new;

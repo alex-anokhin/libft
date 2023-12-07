@@ -3,26 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olanokhi <olanokhi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: olanokhi <olanokhi@42heilbronn.student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 12:12:37 by olanokhi          #+#    #+#             */
-/*   Updated: 2023/10/20 17:28:49 by olanokhi         ###   ########.fr       */
+/*   Updated: 2023/12/07 02:50:24 by olanokhi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/*
-unsigned long	ft_strlen(const char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}*/
 
 char	*ft_strnstr(const char *dest, const char *src, size_t len)
 {
